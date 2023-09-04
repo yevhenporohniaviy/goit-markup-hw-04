@@ -426,8 +426,8 @@ ul,ol {
     color: var(--lightslate);
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-list-item:hover .customers-link,
-.customers-list-item:focus .customers-link{
+.customers-link:hover,
+.customers-link:focus{
     border-color: var(--ocean);
     color: var(--ocean)
 }
@@ -486,7 +486,9 @@ ul,ol {
 }
 .filter-list .filter-list-item:hover,
 .filter-list .filter-list-item:focus {
-    box-shadow:  0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .pages-section .pages-list {
     display: flex;
@@ -507,10 +509,7 @@ ul,ol {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
 }
-.pages-list-item-link:focus
-.pages-list-item-link:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+.pages-list-item-link:focus .app-info,
 .pages-list-item-link:hover .app-info {
     border: 1px solid var(--cloud);
     background: var(--white);
@@ -574,6 +573,7 @@ ul,ol {
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
