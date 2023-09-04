@@ -454,6 +454,9 @@ ul,ol {
     border: 1px solid transparent;
     background-color: var(--ocean);
     color: var(--white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 2px 1px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .pages-section {
     padding-top: 96px;
@@ -486,9 +489,7 @@ ul,ol {
 }
 .filter-list .filter-list-item:hover,
 .filter-list .filter-list-item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 2px 1px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 .pages-section .pages-list {
     display: flex;
@@ -504,6 +505,10 @@ ul,ol {
     border: 1px solid var(--cornflower);
     border-top: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pages-list-item:hover .pages-list-item-link,
+.pages-list-item:focus .pages-list-item-link{
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .pages-list-item-link {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
